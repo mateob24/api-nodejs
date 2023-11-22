@@ -1,0 +1,65 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Bernal",
+  "age": "22",
+  "email": "bernal@gmail.com"
+}
+
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+###
+GET http://localhost:9000/api/users/655cce4545cb979df0034e8d HTTP/1.1
+
+
+###
+PUT http://localhost:9000/api/users/655cd86e3d119650b4ebca3f HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Bernal",
+  "age": "22",
+  "email": "bernal@gmail.com"
+}
+
+
+###
+DELETE http://localhost:9000/api/users/655cb83a2a45cd0d307c0a65 HTTP/1.1
+
+
+
+
+
+
+###
+
+POST http://localhost:9000/api/products HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "iPhone",
+  "stock": "12",
+  "price": "8000000"
+}
+
+###
+GET http://localhost:9000/api/products HTTP/1.1
+
+###
+GET http://localhost:9000/api/products/655d7f516f0c2c1eebc56142 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/products/655d7f516f0c2c1eebc56142 HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Apple Watch",
+  "stock": "31",
+  "price": "1200000"
+}
+
+###
+DELETE http://localhost:9000/api/products/655de4828aa55255164881b7 HTTP/1.1
